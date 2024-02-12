@@ -1,0 +1,1 @@
+Time	ParticipantID	DatasetID	TechniqueID	RepetitionID	mapPosx	mapPosy	mapPosz	mapRotaionx	mapRotationy	mapRotationz	markerHandPosx	markerHandPosy	markerHandPosz	reletivePosx	reletivePosy	reletivePosz	Lable
