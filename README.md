@@ -41,7 +41,7 @@ Then RStudio can be installed from [https://www.rstudio.com/categories/rstudio-i
 
 ## Files produced
 
-After the script completes, in the `resultFiles` folder you should see the following figures from [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers) in PDF format.
+After the script completes, in the `resultFiles` folder you should see the following figures from [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers/MeTACAST.pdf) in PDF format.
 
 
 * Figure7a-log/time_Dataset0_rep23barChartTime.pdf
