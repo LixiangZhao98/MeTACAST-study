@@ -18,8 +18,8 @@ You can also find the source code for MeTACAST: [https://github.com/LixiangZhao9
 ## Project websites
 * https://yulingyun.com/MeTACAST/
 
-## Instructions for generating figures ([Graphics Replicability Stamp](https://www.replicabilitystamp.org/))
-### Requirements
+
+## Requirements
 
 The R script contained within this repository requires, in addition to a [normal R installation](https://cran.r-project.org/), several packages including (potentially more):
 
@@ -34,14 +34,14 @@ The R script contained within this repository requires, in addition to a [normal
 To install these required packages, run the following call from a command line: `Rscript -e "install.packages(c('boot', 'PropCIs', 'ggplot2', 'reshape2', 'glue', 'dplyr','ggpubr'), repos='https://cran.rstudio.com')"`
 Then RStudio can be installed from [https://www.rstudio.com/categories/rstudio-ide/](https://www.rstudio.com/categories/rstudio-ide/).
 
-### Running the R script
+## Running the R script
 
 1. Clone this repository using `https://github.com/LixiangZhao98/MeTACAST-study.git` or download the code as a ZIP file from the repository.
 2. Open `.Rhistory` with RStudio, run `confidenceIntervalMacros.R`, `analysis.R` and `Questionnaire.R` in sequence.
 
-### Files produced
+## Files produced
 
-After the script completes, in the `resultFiles` folder you should see the following figures from [the paper]() in PDF format.
+After the script completes, in the `resultFiles` folder you should see the following figures from [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers) in PDF format.
 
 
 * Figure7a-log/time_Dataset0_rep23barChartTime.pdf
