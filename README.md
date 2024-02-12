@@ -2,7 +2,7 @@
 This is a repository for all data and analysis scripts used in the paper "[MeTACAST: Target- and Context-aware Spatial Selection in VR](https://doi.org/10.1109/TVCG.2023.3326517)", presented at [IEEE Visualization 2023](http://ieeevis.org/year/2023/welcome) and published in the journal [IEEE Transactions on Visualization and Computer Graphics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945). If you use the results in new projects or use it in a different way we would appreciate a citation:
 
 L. Zhao, T. Isenberg, F. Xie, H. -N. Liang and L. Yu, "MeTACAST: Target- and Context-Aware Spatial Selection in VR," in IEEE Transactions on Visualization and Computer Graphics, vol. 30, no. 1, pp. 480-494, Jan. 2024, doi: [10.1109/TVCG.2023.3326517](https://doi.org/10.1109/TVCG.2023.3326517); open-access versions are available at [arXiv](https://arxiv.org/abs/2308.03616).
-You can also find the code for MeTACAST: [https://github.com/LixiangZhao98/MeTACAST](https://github.com/LixiangZhao98/MeTACAST)
+You can also find the source code for MeTACAST: [https://github.com/LixiangZhao98/MeTACAST](https://github.com/LixiangZhao98/MeTACAST)
 
 ## BibTex
 
@@ -23,35 +23,55 @@ You can also find the code for MeTACAST: [https://github.com/LixiangZhao98/MeTAC
 
 The R script contained within this repository requires, in addition to a [normal R installation](https://cran.r-project.org/), several packages including (potentially more):
 
-* `plyr`
-* `dplyr`
-* `tidyr`
-* `reshape2`
+* `boot`
+* `PropCIs`
 * `ggplot2`
-* `propCIs`
+* `reshape2`
+* `glue`
+* `dplyr`
+* `ggpubr`
 
-To install these required packages, run the following call from a command line: `Rscript -e "install.packages(c('plyr', 'dplyr', 'tidyr', 'reshape2', 'ggplot2', 'propCIs'), repos='https://cran.rstudio.com')"`
-
-If you encounter problem with Pandoc:
-1. To check whether Pandoc was correctly installed: ``Rscript -e "rmarkdown::pandoc_exec()"``
-2. To install Pandoc from its official website: https://pandoc.org/installing.html . If you use macOS, you can also use Homebrew to install it: ``brew install pandoc``
+To install these required packages, run the following call from a command line: `Rscript -e "install.packages(c('boot', 'PropCIs', 'ggplot2', 'reshape2', 'glue', 'dplyr','ggpubr'), repos='https://cran.rstudio.com')"`
+Then RStudio can be installed from [https://www.rstudio.com/categories/rstudio-ide/](https://www.rstudio.com/categories/rstudio-ide/).
 
 ### Running the R script
 
 1. Clone this repository using `https://github.com/LixiangZhao98/MeTACAST-study.git` or download the code as a ZIP file from the repository.
-
+2. Open `.Rhistory` with RStudio, run `confidenceIntervalMacros.R`, `analysis.R` and `Questionnaire.R` in sequence.
 
 ### Files produced
 
-After the script completes, in the `` folder you should see the following figures from [the paper]() in PDF format.
-
-* Fig. 4 
-  * Figure4a-exp2_beauvis_bar.pdf
-  * Figure4b-exp2_beauvis_pie.pdf
-  * Figure4c-exp2_beauvis_map.pdf
-  * Figure4d-exp2_beauvis_diff_bar.pdf
-  * Figure4e-exp2_beauvis_diff_pie.pdf
-  * Figure4f-exp2_beauvis_diff_map.pdf
+After the script completes, in the `resultFiles` folder you should see the following figures from [the paper]() in PDF format.
 
 
-We are unable to script the other images in our paper, as they are design samples created by participants or old visualization examples.
+* Figure7a-log/time_Dataset0_rep23barChartTime.pdf
+* Figure7b-log/time_Dataset1_rep23barChartTime.pdf
+* Figure7c-log/time_Dataset2_rep23barChartTime.pdf
+* Figure7d-log/time_Dataset3_rep23barChartTime.pdf
+* Figure7e-log/time_Dataset4_rep23barChartTime.pdf
+* Figure8-log/time_Dataset4_rep23barChartTimeDatasetsDifference.pdf
+* Figure9top-log/error_Dataset4_rep23_barChartF1.pdf
+* Figure9bottom-log/error_Dataset4_rep23_barChartMCC.pdf
+* Figure10-Questionnaire/tlx_task1to4.pdf
+* Figure11-Questionnaire/tlx_task5.pdf
+* Figure14-log/time_0123Datasets_rep23barChartTime.pdf
+* Figure15-log/time_0123Datasets_rep23barChartTimeDatasetsDifference.pdf
+* Table2-log/error_Dataset(0-4)_rep23_Means_F1.xls, log/error_Dataset(0-4)_rep23_Means_MCC.xls, log/time_Dataset(0-4)_rep23Means_time.xls, log/time_Dataset(0-4)_rep23Ratios_time.xls
+* Table3-log/error_0123Datasets_rep23_Means_F1.xls, log/error_0123Datasets_rep23_Means_MCC.xls, log/time_0123Datasets_rep23Means_time.xls, log/time_0123Datasets_rep23Ratios_time.xls
+* Figure16-log/error_0123Datasets_rep23_barChartF1.pdf
+* Figure17-log/error_0123Datasets_rep23_barChartMCC.pdf
+* Figure18-log/error_Dataset0_rep23_barChartF1.pdf
+* Figure19-log/error_Dataset0_rep23_barChartMCC.pdf
+* Figure20-log/error_Dataset1_rep23_barChartF1.pdf
+* Figure21-log/error_Dataset1_rep23_barChartMCC.pdf
+* Figure22-log/error_Dataset2_rep23_barChartF1.pdf
+* Figure23-log/error_Dataset2_rep23_barChartMCC.pdf
+* Figure24-log/error_Dataset3_rep23_barChartF1.pdf
+* Figure25-log/error_Dataset3_rep23_barChartMCC.pdf
+* Figure26-log/error_Dataset4_rep23_barChartF1.pdf
+* Figure27-log/error_Dataset4_rep23_barChartMCC.pdf
+* Figure27-log/error_Dataset4_rep23_barChartMCC.pdf
+* Figure28-Questionnaire/TechniqueRank_dataset.pdf
+
+Fig. 29-39 were generated by executing the `analysis.R` and `Questionnaire.R` for VR experts (using VR once a week) and novices (less than once a week) in sequence.
+Other images from the paper (i.e., Fig. 1-6, Fig.12–13) were created with the tool [Adobe Illustrator](https://www.adobe.com/products/illustrator/free-trial-download.html), so we could not script them.
