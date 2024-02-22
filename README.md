@@ -31,11 +31,14 @@ The R script contained within this repository requires, in addition to a [normal
 * `dplyr`
 * `ggpubr`
 
-To install these required packages, run the following call from a command line: `Rscript -e "install.packages(c('boot', 'PropCIs', 'ggplot2', 'reshape2', 'glue', 'dplyr','ggpubr'), repos='https://cran.rstudio.com')"`
+To install these required packages, run the following call from a command line: 
+```Rscript -e "install.packages(c('boot', 'PropCIs', 'ggplot2', 'reshape2', 'glue', 'dplyr','ggpubr'), repos='https://cran.rstudio.com')"```
 
 ## Running the R script
 
-1. Clone this repository using `https://github.com/LixiangZhao98/MeTACAST-study.git` or download the code as a ZIP file from the repository.
+1. Clone this repository using 
+```git clone https://github.com/LixiangZhao98/MeTACAST-study.git```
+ or download the code as a ZIP file from the repository.
 2. Open `R`, change the Working Directory to `MeTACAST-study`.
 3. Run `confidenceIntervalMacros.R`, `analysis.R` and `Questionnaire.R` in sequence. To be noted that, `analysis.R` need to complete in one or two minutes since the large amount of the user data.
 
