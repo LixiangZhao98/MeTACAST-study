@@ -42,14 +42,15 @@ To install these required packages, run the following call from a command line:
 git clone https://github.com/LixiangZhao98/MeTACAST-study.git
 ```
  or download the code as a ZIP file from the repository.
+ 
 2. Change the Working Directory to `MeTACAST-study`. You can do this by
 ```
 setwd('.../MeTACAST-study-master')
 ```
 3. Run `confidenceIntervalMacros.R`, `analysis.R` and `Questionnaire.R` in sequence. You can do this by
 ```
-source('confidenceIntervalMacros.R'
-source('analyze.R')
+source('confidenceIntervalMacros.R')
+source('analysis.R')
 source('Questionnaire.R')
 ```
 To be noted that, `analysis.R` need to complete in one or two minutes since the large amount of the user data.
