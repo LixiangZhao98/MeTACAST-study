@@ -32,7 +32,9 @@ The R script contained within this repository requires, in addition to a [normal
 * `ggpubr`
 
 To install these required packages, run the following call from a command line: 
-```install.packages(c("boot", "PropCIs", "ggplot2", "reshape2", "glue", "dplyr","ggpubr"),repos="https://cran.rstudio.com")```
+```
+install.packages(c("boot", "PropCIs", "ggplot2", "reshape2", "glue", "dplyr","ggpubr"),repos="https://cran.rstudio.com")
+```
 
 
 ## Running the R script
@@ -42,7 +44,7 @@ To install these required packages, run the following call from a command line:
 git clone https://github.com/LixiangZhao98/MeTACAST-study.git
 ```
  or download the code as a ZIP file from the repository.
- 
+
 2. Change the Working Directory to `MeTACAST-study`. You can do this by
 ```
 setwd('.../MeTACAST-study-master')
