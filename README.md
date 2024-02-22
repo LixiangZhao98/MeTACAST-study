@@ -32,49 +32,55 @@ The R script contained within this repository requires, in addition to a [normal
 * `ggpubr`
 
 To install these required packages, run the following call from a command line: 
-```Rscript -e "install.packages(c('boot', 'PropCIs', 'ggplot2', 'reshape2', 'glue', 'dplyr','ggpubr'), repos='https://cran.rstudio.com')"```
+```install.packages(c("boot", "PropCIs", "ggplot2", "reshape2", "glue", "dplyr","ggpubr"),repos="https://cran.rstudio.com")
+```
 
 ## Running the R script
 
 1. Clone this repository using 
 ```git clone https://github.com/LixiangZhao98/MeTACAST-study.git```
  or download the code as a ZIP file from the repository.
-2. Open `R`, change the Working Directory to `MeTACAST-study`.
-3. Run `confidenceIntervalMacros.R`, `analysis.R` and `Questionnaire.R` in sequence. To be noted that, `analysis.R` need to complete in one or two minutes since the large amount of the user data.
+2. Change the Working Directory to `MeTACAST-study`. You can do this by
+```setwd('.../MeTACAST-study-master')```
+3. Run `confidenceIntervalMacros.R`, `analysis.R` and `Questionnaire.R` in sequence. You can do this by
+```source('confidenceIntervalMacros.R'```
+```source('analyze.R')```
+```source('Questionnaire.R')```
+To be noted that, `analysis.R` need to complete in one or two minutes since the large amount of the user data.
+4. After the script completes, the figures (PDF format) will be generated in the folder `resultFiles/log` and `resultFiles/Questionnaire`. The new generated files will cover the files generated last time.
 
 ## Files produced
 
-After the script completes, in the `resultFiles` folder you should see the following figures from [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers/MeTACAST.pdf) in PDF format.
+In the folder `resultFiles/log` and `resultFiles/Questionnaire` you should see the following figures from [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers/MeTACAST.pdf).
 
 
-* Figure7a-log/time_Dataset0_rep23barChartTime.pdf
-* Figure7b-log/time_Dataset1_rep23barChartTime.pdf
-* Figure7c-log/time_Dataset2_rep23barChartTime.pdf
-* Figure7d-log/time_Dataset3_rep23barChartTime.pdf
-* Figure7e-log/time_Dataset4_rep23barChartTime.pdf
-* Figure8-log/time_Dataset4_rep23barChartTimeDatasetsDifference.pdf
-* Figure9top-log/error_Dataset4_rep23_barChartF1.pdf
-* Figure9bottom-log/error_Dataset4_rep23_barChartMCC.pdf
-* Figure10-Questionnaire/tlx_task1to4.pdf
-* Figure11-Questionnaire/tlx_task5.pdf
-* Figure14-log/time_0123Datasets_rep23barChartTime.pdf
-* Figure15-log/time_0123Datasets_rep23barChartTimeDatasetsDifference.pdf
-* Table2-log/error_Dataset(0-4)_rep23_Means_F1.xls, log/error_Dataset(0-4)_rep23_Means_MCC.xls, log/time_Dataset(0-4)_rep23Means_time.xls, log/time_Dataset(0-4)_rep23Ratios_time.xls
-* Table3-log/error_0123Datasets_rep23_Means_F1.xls, log/error_0123Datasets_rep23_Means_MCC.xls, log/time_0123Datasets_rep23Means_time.xls, log/time_0123Datasets_rep23Ratios_time.xls
-* Figure16-log/error_0123Datasets_rep23_barChartF1.pdf
-* Figure17-log/error_0123Datasets_rep23_barChartMCC.pdf
-* Figure18-log/error_Dataset0_rep23_barChartF1.pdf
-* Figure19-log/error_Dataset0_rep23_barChartMCC.pdf
-* Figure20-log/error_Dataset1_rep23_barChartF1.pdf
-* Figure21-log/error_Dataset1_rep23_barChartMCC.pdf
-* Figure22-log/error_Dataset2_rep23_barChartF1.pdf
-* Figure23-log/error_Dataset2_rep23_barChartMCC.pdf
-* Figure24-log/error_Dataset3_rep23_barChartF1.pdf
-* Figure25-log/error_Dataset3_rep23_barChartMCC.pdf
-* Figure26-log/error_Dataset4_rep23_barChartF1.pdf
-* Figure27-log/error_Dataset4_rep23_barChartMCC.pdf
-* Figure27-log/error_Dataset4_rep23_barChartMCC.pdf
-* Figure28-Questionnaire/TechniqueRank_dataset.pdf
+* resultFiles/log/time_Dataset0_rep23barChartTime.pdf------Figure7a in the paper
+* resultFiles/log/time_Dataset1_rep23barChartTime.pdf------Figure7b in the paper
+* resultFiles/log/time_Dataset2_rep23barChartTime.pdf------Figure7c in the paper
+* resultFiles/log/time_Dataset3_rep23barChartTime.pdf------Figure7d in the paper
+* resultFiles/log/time_Dataset4_rep23barChartTime.pdf------Figure7e in the paper
+* resultFiles/log/time_Dataset4_rep23barChartTimeDatasetsDifference.pdf------Figure8 in the paper
+* resultFiles/log/error_Dataset4_rep23_barChartF1.pdf------Figure9top in the paper
+* resultFiles/log/error_Dataset4_rep23_barChartMCC.pdf------Figure9bottom in the paper
+* resultFiles/Questionnaire/tlx_task1to4.pdf------Figure10 in the paper
+* resultFiles/Questionnaire/tlx_task5.pdf------Figure11 in the paper
+* resultFiles/log/time_0123Datasets_rep23barChartTime.pdf------Figure14 in the paper
+* resultFiles/log/time_0123Datasets_rep23barChartTimeDatasetsDifference.pdf------Figure15 in the paper
+* resultFiles/log/error_Dataset(0-4)_rep23_Means_F1.xls, log/error_Dataset(0-4)_rep23_Means_MCC.xls, log/time_Dataset(0-4)_rep23Means_time.xls, log/time_Dataset(0-4)_rep23Ratios_time.xls------Table2 in the paper
+* resultFiles/log/error_0123Datasets_rep23_Means_F1.xls, log/error_0123Datasets_rep23_Means_MCC.xls, log/time_0123Datasets_rep23Means_time.xls, log/time_0123Datasets_rep23Ratios_time.xls------Table3 in the paper
+* resultFiles/log/error_0123Datasets_rep23_barChartF1.pdf------Figure16 in the paper
+* resultFiles/log/error_0123Datasets_rep23_barChartMCC.pdf------Figure17 in the paper
+* resultFiles/log/error_Dataset0_rep23_barChartF1.pdf------Figure18 in the paper
+* resultFiles/log/error_Dataset0_rep23_barChartMCC.pdf------Figure19 in the paper
+* resultFiles/log/error_Dataset1_rep23_barChartF1.pdf------Figure20 in the paper
+* resultFiles/log/error_Dataset1_rep23_barChartMCC.pdf------Figure21 in the paper
+* resultFiles/log/error_Dataset2_rep23_barChartF1.pdf------Figure22 in the paper
+* resultFiles/log/error_Dataset2_rep23_barChartMCC.pdf------Figure23 in the paper
+* resultFiles/log/error_Dataset3_rep23_barChartF1.pdf------Figure24 in the paper
+* resultFiles/log/error_Dataset3_rep23_barChartMCC.pdf------Figure25 in the paper
+* resultFiles/log/error_Dataset4_rep23_barChartF1.pdf------Figure26 in the paper
+* resultFiles/log/error_Dataset4_rep23_barChartMCC.pdf------Figure27 in the paper
+* resultFiles/Questionnaire/TechniqueRank_dataset.pdf------Figure28 in the paper
 
-Fig. 29-43 were generated by executing the `analysis.R` and `Questionnaire.R` for VR experts (using VR once a week) and novices (less than once a week) in sequence.
+Fig. 29-43 were generated by executing the `analysis.R` and `Questionnaire.R` for VR experts (using VR once a week) and novices (less than once a week) seperately.
 Other images from the paper (i.e., Fig. 1-6, Fig.12–13) were created with the tool [Adobe Illustrator](https://www.adobe.com/products/illustrator/free-trial-download.html), so we could not script them.
