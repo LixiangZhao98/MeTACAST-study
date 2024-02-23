@@ -60,7 +60,7 @@ To be noted that, `analysis.R` need to complete in one or two minutes since the 
 
 ## Files produced
 
-In the folder `resultFiles/log` and `resultFiles/Questionnaire` you should see the following figures from [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers/MeTACAST.pdf).
+In the folder `resultFiles/log` and `resultFiles/Questionnaire` you should see the result PDFs. The following figures in [the paper](https://github.com/LixiangZhao98/asset/tree/master/Publications/Papers/MeTACAST.pdf) are corresponding to the PDFs.
 
 
 * resultFiles/log/time_Dataset0_rep23barChartTime.pdf------Figure7a in the paper
