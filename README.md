@@ -1,6 +1,6 @@
 # MeTACAST: Target- and Context-aware Spatial Selection in VR
 
-[Paper](https://doi.org/10.1109/TVCG.2023.3326517) | [Video](https://www.youtube.com/watch?v=R_WRfzgnOAM&t=1s "Video") | [MeTACAST Project](https://github.com/LixiangZhao98/MeTACAST)
+[Paper](https://doi.org/10.1109/TVCG.2023.3326517) | [Video](https://www.youtube.com/watch?v=R_WRfzgnOAM&t=1s "Video") | [MeTACAST Source code](https://github.com/LixiangZhao98/MeTACAST)
 
 This is a repository for all user study data and analysis scripts used in the paper "[MeTACAST: Target- and Context-aware Spatial Selection in VR](https://doi.org/10.1109/TVCG.2023.3326517)", presented at [IEEE Visualization 2023](http://ieeevis.org/year/2023/welcome) and published in the journal [IEEE Transactions on Visualization and Computer Graphics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945). If you use the results in new projects or use it in a different way we would appreciate a citation:
 
