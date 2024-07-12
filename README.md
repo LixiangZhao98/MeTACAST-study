@@ -10,12 +10,27 @@ You can also find the source code for MeTACAST: [https://github.com/LixiangZhao9
 ## BibTex
 
 ```
-@article{zhao2023metacast,
-  title={MeTACAST: Target-and Context-aware Spatial Selection in VR},
-  author={Zhao, Lixiang and Isenberg, Tobias and Xie, Fuqi and Liang, Hai-Ning and Yu, Lingyun},
-  journal={IEEE Transactions on Visualization and Computer Graphics},
-  year={2023},
-  publisher={IEEE}
+@article{Zhao:2024:MTC,
+  author      = {Lixiang Zhao and Tobias Isenberg and Fuqi Xie and Hai-Ning Liang and Lingyun Yu},
+  title       = {MeTACAST: Target- and Context-aware Spatial Selection in VR},
+  journal     = {IEEE Transactions on Visualization and Computer Graphics},
+  year        = {2024},
+  volume      = {30},
+  number      = {1},
+  month       = jan,
+  pages       = {480--494},
+  doi         = {10.1109/TVCG.2023.3326517},
+  shortdoi    = {10/gtnn25},
+  doi_url     = {https://doi.org/10.1109/TVCG.2023.3326517},
+  oa_hal_url  = {https://hal.science/hal-04196163},
+  preprint    = {https://doi.org/10.48550/arXiv.2308.03616},
+  osf_url     = {https://osf.io/dvj9n/},
+  url         = {https://tobias.isenberg.cc/p/Zhao2024MTC},
+  github_url  = {https://github.com/LixiangZhao98/MeTACAST},
+  github_url2 = {https://github.com/LixiangZhao98/PointCloud-Visualization-Tool},
+  github_url3 = {https://github.com/LixiangZhao98/MeTACAST-study},
+  pdf         = {https://tobias.isenberg.cc/personal/papers/Zhao_2024_MTC.pdf},
+  video       = {https://youtu.be/R_WRfzgnOAM},
 }
 ```
 ## Project websites
